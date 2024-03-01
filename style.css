@@ -10,7 +10,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.3rem;
+    padding: 1rem;
     border-radius: 2rem;
     margin: 3rem;
 }
@@ -220,13 +220,16 @@ nav .buttons  #blue{
 .facts{
     display: flex;
     flex-direction: column;
-    margin: 5rem;
-    gap: 2rem;
+    margin: 7rem;
+    gap: 3rem;
 }
 .facts .heads{
     display: flex;
+    gap: 6rem;
+    /* justify-content: space-between; */
+    margin-bottom: -4rem;
 }
-/* .facts .heads .head-t{
+.facts .heads .head-t{
     display: flex;
     flex-direction: column;
     gap: .7rem;
@@ -240,14 +243,17 @@ nav .buttons  #blue{
     color: #1D2939;
     font-weight: 600;
     font-size: 2rem;
-} */
-
+}
+.facts .heads .cav img{
+    width: 200px;
+}
 .facts .heads span{
     color: #667085;
     font-weight: 400;
 }
 .facts .canvas{
     display: flex;
+    /* justify-content: space-between; */
 }
 .facts .canvas .texts{
     display: grid;
@@ -264,12 +270,22 @@ nav .buttons  #blue{
     width: 50px;
 }
 
+.facts .canvas .texts .text span{
+    color: #101828;
+    font-weight: 600;
+}
+.facts .canvas .texts .text small{
+    color: #475467;
+    font-weight: 400;
+}
 .facts .canvas {
     display: flex;
     gap: 5rem;
     /* justify-content: space-between; */
 }
 .facts .canvas .images img{
+    position: absolute;
+    z-index: -1;
     width: 300px;
     height: 250px;
 }
